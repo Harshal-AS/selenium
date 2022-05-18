@@ -1,0 +1,15 @@
+package seleniumprogram;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class OpenFireFox {
+
+	public static void main(String[] args) {
+		String driver1="D://AUTOMATION//ACCELERATION//worksapce//SeleniumBasicProgram//src//seleniumprogram//OpenFireFox.java";
+		System.getProperty("webdriver.gecko.driver",driver1);
+		
+        FirefoxDriver fdriver=new FirefoxDriver();
+        
+	}
+
+}

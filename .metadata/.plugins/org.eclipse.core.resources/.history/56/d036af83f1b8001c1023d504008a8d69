@@ -1,0 +1,61 @@
+package encapsulation;
+
+public class Encapsulationall {
+	private int age = 12;
+	private double salary;
+	private char c = 'Z';
+	private boolean b;
+
+	// Getter method= it is help to access private variable outside the class
+	public int a() {
+		return age;
+	}
+
+	public double b() {
+		return salary;
+	}
+
+	public char c() {
+		return c;
+	}
+
+	public boolean d() {
+		return b;
+	}
+
+	// Setter method= it is helps to modified or updated to private variable
+	public void e(int age) {
+
+	}
+
+	public void f(double salary) {
+
+	}
+
+	public void g(char c) {
+
+	}
+
+	public void h(boolean b) {
+
+	}
+
+	public static void main(String[] args) {
+		// acess  the private variable
+		Encapsulationall r1=new Encapsulationall();
+System.out.println(" getter method acess to private variable:  "+r1.a());
+System.out.println(" getter method acess to private variable:  "+r1.b());
+System.out.println(" getterr method acess to private variable:  "+r1.c());
+System.out.println(" getter method acess to private variable:  "+r1.d());
+//updated value call method 
+r1.e(10);
+r1.f(700.10);
+r1.g('z');
+r1.h(true);
+System.out.println(" setter method acess to private variable:  "+r1.a());
+System.out.println(" setter method acess to private variable:  "+r1.b());
+System.out.println(" setter method acess to private variable:  "+r1.c());
+System.out.println(" setter method acess to private variable:  "+r1.d());
+	}
+
+}

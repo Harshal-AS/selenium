@@ -1,0 +1,18 @@
+package unaryoperator;
+
+public class Unaryoperator {
+
+	public static void main(String[] args) {
+		int a=34,b;
+		b=a++;
+		System.out.println("a:"+a);
+		System.out.println("b:"+b);
+		
+		int z=a,x;
+		x=a--;
+		System.out.println("z:"+z);
+		System.out.println("x:"+x);
+		
+	}
+
+}

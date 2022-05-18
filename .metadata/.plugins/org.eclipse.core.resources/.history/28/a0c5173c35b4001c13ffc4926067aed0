@@ -1,0 +1,28 @@
+package castinginjava;
+class A{
+	void a1() {
+		System.out.println("parents a");
+	}
+}
+class B extends A{
+	void a2() {
+		System.out.println("B SUBCLASS A PARENTS CLASS");
+	}
+}
+class C extends B{
+	void a3() {
+}
+}
+public class Nonprimitive2 {
+
+	public static void main(String[] args) {
+		B Q1=new C();//implicit/auto up casting ---->java complier converts into--> B Q1=new (B)C();
+        Q1.a1();
+        Q1.a2();
+        C Q2=new C ();
+        B q1=Q2;//IMPLICIT UP CASTING>> JAVA COPILER INTERNLLY B q1=Q2>>>new C();>>>>>(B) newc();
+        B q2=(B) Q2; //EXPLICIT UP CASTING.>> B q2=(B)new C();
+        
+	}
+
+}

@@ -1,0 +1,13 @@
+package assignments;
+Interface  A{
+	
+}
+
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

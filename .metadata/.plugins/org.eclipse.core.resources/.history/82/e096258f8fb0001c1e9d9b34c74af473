@@ -1,0 +1,44 @@
+package abstract1;
+
+abstract class wheel {// abstract class
+	int empid = 1234;
+	int age = 10;
+
+	wheel(int empid, int age) {// cons
+		System.out.println("local variable age:" + age);
+		System.out.println("local variable age:" + empid);
+	}
+
+	public abstract void harshal();// abstract method without body
+
+	public void display() {// non abstract method normal method
+		this.age = age;// this statements use
+		this.empid = empid;// this statements use
+		System.out.println("gv variable age:" + this.age);
+		System.out.println("gv variable age:" + this.empid);
+	}
+}
+
+class tyre extends wheel {
+
+	public void harshal() {
+		System.out.println("abstract method overried to subclass ");
+	}
+
+	tyre(int age) {// cons use
+		super(5896, 50);// super statement use in only cons
+	}
+
+}
+
+public class Abstract2 {
+
+	public static void main(String[] args) {
+
+		tyre h1 = new tyre(5);
+		h1.harshal();
+		h1.display();
+
+	}
+
+}

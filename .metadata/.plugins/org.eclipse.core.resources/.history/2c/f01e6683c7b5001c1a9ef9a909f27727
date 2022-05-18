@@ -1,0 +1,39 @@
+package assignments;
+
+import java.util.concurrent.SynchronousQueue;
+
+interface A{
+	void Harshal();
+
+interface B {
+	void Harshal2();
+		
+interface C {
+	void Harshal3();
+}
+class interface1 implement A,B,C{
+	public void Harshal1() {
+		System.out.println("overriding Harshal 1 method");
+	}
+		public void Harshal2() {
+			System.out.println("overriding Harshal 2 method");
+		}
+			public void Harshal3() {
+				System.out.println("overriding Harshal 3 method");	
+				
+				}
+			}
+}
+}
+
+
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		D ref= new D;
+		
+	}
+		
+	}
+

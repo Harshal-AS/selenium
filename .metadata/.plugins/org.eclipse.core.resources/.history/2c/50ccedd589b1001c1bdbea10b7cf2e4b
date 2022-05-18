@@ -1,0 +1,14 @@
+package castinginjava;
+
+public class Primitivecasting4 {
+	double display1() {
+		return 10;
+	}
+
+	public static void main(String[] args) {
+		Primitivecasting4 t1=new Primitivecasting4();
+		int res=(int)t1.display1();
+		
+	}
+
+}

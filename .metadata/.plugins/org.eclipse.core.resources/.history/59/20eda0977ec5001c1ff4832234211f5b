@@ -1,0 +1,32 @@
+package locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment3 {
+
+	public static void main(String[] args) {
+		//relative path
+		String driver1=".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driver1);
+		WebDriver cdriver=new ChromeDriver ();
+		//open chrome browser
+		cdriver.get("https://www.vtiger.com");
+		System.out.println("before login page title: "+cdriver.getTitle());
+		WebElement a=cdriver.findElement(By.className("bluebutton"));
+		a.click();
+		
+		WebElement b=cdriver.findElement(By.id("username"));
+		b.sendKeys("admin");
+		
+		WebElement c=cdriver.findElement(By.id("username"));
+		c.sendKeys("Test@123");
+		//System.out.println("after login page title: "+cdriver.getTitle());
+		}
+}
+	
+
+	
+

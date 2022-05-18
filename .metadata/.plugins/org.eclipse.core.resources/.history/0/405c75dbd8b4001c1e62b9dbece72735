@@ -1,0 +1,32 @@
+package castinginjava;
+class A{
+	static int  harshal(int a,int b) {//static method
+    int res=a+b;
+	return res;
+	}
+	class B extends A {
+		void harshal1() {//non static method
+		System.out.println("non static void method");
+			
+		}	
+	}
+	}
+
+public class Updowncasting {
+
+	public static void main(String[] args) {
+    // upcasting = object created childclass(B) reference to parent class(A)3
+		A a1=new B();//UPCASTING 
+	 
+		B b2=new B();
+		System.out.println(A.harshal(40, 20));
+		
+		
+		B c3=new B();
+		System.out.println("static method harshal return type: "+A.harshal(40, 50));
+		
+
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package objectclass;
+
+public class Objectclass4 {
+
+static int rollno;
+ int lastno=400;
+ Objectclass4(){
+	 rollno=lastno;
+	 
+ }
+ // @ overridide
+ public int hashcode() {
+	 return rollno;
+	 
+ }
+
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

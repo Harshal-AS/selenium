@@ -1,0 +1,29 @@
+package polymorphism;
+class Tea {
+	static void addition(int age) {
+		
+		System.out.println("age: "+age);
+	}
+}
+class Break extends Tea{
+	 void addition(int age,double salary) {
+		double res=age+salary;
+		System.out.println("res=age+salary: "+res);
+	}
+}
+
+public class Runtimepoly4 {
+
+	public static void main(String[] args) {
+		 Tea s1=new Break();//upcasting java compiler 
+		 Tea.addition(20);
+		 
+		 // object created childclass ref. to childclass so access to childclass member
+		 Break s2=new Break ();
+		 s2.addition(70, 70000.40);
+		 Tea.addition(80);
+		 
+
+	}
+
+}

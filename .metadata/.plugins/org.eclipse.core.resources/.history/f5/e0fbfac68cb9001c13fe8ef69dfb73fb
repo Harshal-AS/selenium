@@ -1,0 +1,37 @@
+package castinginjava;
+class monday{
+	void disply (int age) { 
+		System.out.println();
+	}
+	void dispaly1() {  //  only non -static method override
+		System.out.println("this method override to subclass ");
+	}
+}
+class sunday extends monday{
+	int age =12;
+	double salary=1234.45;
+	void harshal(int age,double salary) {
+		super.age=age;  // 
+		super.salary=salary;
+		System.out.println(" this ");
+	}
+	void dispaly1() {  //  only non -static method override
+		System.out.println("this method override to subclass ");
+	}
+}
+class tuesday extends sunday{
+	void dispaly1() {  //  only non -static method override
+		System.out.println("this method override to subclass ");
+	}
+}
+class wednesday extends tuesday{
+	
+}
+public class Nonprimitiveall {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

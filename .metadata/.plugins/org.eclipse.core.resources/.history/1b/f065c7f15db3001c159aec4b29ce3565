@@ -1,0 +1,10 @@
+package memorymanagement;
+
+public class Basicoperator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package encapsulation;
+class y2{
+	private  long l=789456;
+	private boolean b;
+	// setter method use only for the write 
+	public void setl() {	
+	}
+	public void setb(){	
+}
+
+public class Writeonly {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

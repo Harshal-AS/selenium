@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;SeleniumBasicProgram&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumBasicProgram&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     byte-buddy-1.8.15.jar&#x0D;&#x0A;     commons-exec-1.3.jar&#x0D;&#x0A;     guava-25.0-jre.jar&#x0D;&#x0A;     okhttp-3.11.0.jar&#x0D;&#x0A;     okio-1.14.0.jar" description="Delete elements" element1="executables/okhttp-3.11.0.jar" element2="executables/byte-buddy-1.8.15.jar" element3="executables/commons-exec-1.3.jar" element4="executables/guava-25.0-jre.jar" element5="executables/okio-1.14.0.jar" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="5" stamp="1650628128091" subPackages="false" version="1.0"/>
+</session>

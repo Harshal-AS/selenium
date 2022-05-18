@@ -1,0 +1,18 @@
+package locators;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Actitimeloginlogout {
+
+	public static void main(String[] args) {
+		String driver2 = System.getProperty("user.dir") + "//executables//chromedriver.exe";
+		// set driver executable path by using system.setproperty(string key,string
+		// value)
+		System.setProperty("webdriver.chrome.driver", driver2);
+		// instance of the required class
+		WebDriver driver = new ChromeDriver();
+		
+	}
+
+}

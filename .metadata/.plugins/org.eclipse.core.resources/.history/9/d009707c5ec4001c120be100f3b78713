@@ -1,0 +1,19 @@
+package seleniumprogram;
+
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Egdeopen {
+
+	public static void main(String[] args) {
+		String driverPath3=System.getProperty("user.dir")+"\\executables\\geckodriver.exe";
+		//Set the driver executable path using System.setProperty(String key,String value)
+		System.setProperty("webdriver.msedge.driver", driverPath3);
+		//create an instance of required browser class
+		EdgeDriver edriver=new EdgeDriver();
+	
+
+
+
+	}
+
+}

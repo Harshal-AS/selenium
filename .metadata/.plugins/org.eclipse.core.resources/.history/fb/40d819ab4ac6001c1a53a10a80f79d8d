@@ -1,0 +1,44 @@
+package locators;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Actitimeloginlogoutvalidation {
+
+	public static void main(String[] args) {
+		String driver1=".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driver1);
+		WebDriver a=new ChromeDriver ();
+		a.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+     a.get("https://demo.actitime.com/login.do");
+    String actualtitle=  a.getTitle();
+    String expectedtitle= "actiTIME - Login" ;
+    System.out.println("actualtitle: "+actualtitle);
+    System.out.println("expectedtitle: "+expectedtitle);
+    if(actualtitle.equals(expectedtitle)) {
+    	System.out.println("actual title pass open ");
+    }
+    else {
+    	System.out.println("actual titlefail ");
+    }
+   WebElement username= a.findElement(By.id("username"));
+   username.sendKeys("trainee");
+   WebElement password= a.findElement(By.name("pwd"));
+   password.sendKeys("trainee");
+    
+   WebElement loginButton= a.findElement(By.id("loginButton"));
+   loginbutton.click();
+   
+   WebElement logoutButton= a.findElement(By.id("logoutLink"));
+ //explicit wait
+ 		WebDriverWait wait=new WebDriverWait(a,20);
+ 		wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
+ 		
+	}
+}

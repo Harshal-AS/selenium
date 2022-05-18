@@ -1,0 +1,28 @@
+package encapsulation;
+class y2{
+	private  long l=789456;
+	private boolean b;
+	// setter method use only for the write 
+	public void setl(long l) {	
+		this. l= l;
+	}
+	
+	public void setb(boolean b){	
+		this.b=b;	
+	}
+}
+
+public class Writeonly {
+
+	public static void main(String[] args) {
+		y2 b1=new y2();
+		b1.setl(1234587);
+		b1.setb(false);
+	}
+		/* setter method not updated baecause not acess the private variable 
+		outside the class.
+		*/
+
+	
+
+}

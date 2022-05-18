@@ -1,0 +1,26 @@
+package handlingdropdown;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Singlehandlingelemnt {
+
+	public static void main(String[] args) {
+		WebDriverManager.edgedriver().setup();
+		WebDriver edge=new EdgeDriver();
+		edge.manage().window().maximize();
+		edge.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		edge.get("https://demosite.executeautomation.com/");
+		
+		edge.findElement(By.name("username")).sendKeys("harshal");
+		edge.findElement(By.name("password")).sendKeys("raysin");
+		edge.findElement(By.xpath("//input[@name='Login']")).click();
+		//edge.findElement(By.tagName("Login")).click();
+	}
+
+}//driver.findElement(By.xpath("//input[@name='Login']")).click();

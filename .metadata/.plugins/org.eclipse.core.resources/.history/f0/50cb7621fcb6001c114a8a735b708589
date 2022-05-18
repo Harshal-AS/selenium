@@ -1,0 +1,21 @@
+package objectclass;
+class print{
+	public int hashcode() {
+		return 50 ;
+	}
+	
+}
+
+public class Objectclass6 {
+	static int age=50;
+	int notebook;
+	Objectclass6(){
+		 notebook=age;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package locators;
+
+//import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class Tecklisticassignment {
+
+	public static void main(String[] args) {
+		//String driver1 = System.getProperty(key, def)
+		System.setProperty("webdriver.chrome.driver", "./executables/chromedriver.exe");
+		WebDriver as = new ChromeDriver();
+         as.get("https://www.techlistic.com/");
+         
+       // as.manage().window().setSize(new Dimension(500,700));
+         as.manage().window().maximize();
+        
+         as.get("https://www.techlistic.com/p/java.html/");
+         String actualtitle=as.getTitle();
+         String currentur=as.getCurrentUrl();
+         System.out.println(actualtitle);
+         System.out.println(currentur);
+         
+         }
+        // as.navigate().back();
+         //https://www.techlistic.com/p/selenium-tutorials.html
+	}//https://www.techlistic.com/p/bdd-tutorial-with-python-behave.html
+
+
+
+
+
+
+
+//https://www.techlistic.com/p/java.html

@@ -1,0 +1,16 @@
+package selemiumfolder;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+//import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class OpenFirefox {
+
+	public static void main(String[] args) {
+		String driverPath1=".//Drivers//geckodriver";
+		System.setProperty("webdriver.gecko.driver", driverPath1);
+		FirefoxDriver fdriver=new FirefoxDriver();
+	}
+	}
+
+

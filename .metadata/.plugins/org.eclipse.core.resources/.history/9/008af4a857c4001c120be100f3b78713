@@ -1,0 +1,13 @@
+package seleniumprogram;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Openfirefox {
+
+	public static void main(String[] args) {
+		String driver1=".// executables//gechodriver";
+		System.setProperty("webdriver.geckodriver", driver1);
+		FirefoxDriver ffire=new FirefoxDriver();
+	}
+
+}

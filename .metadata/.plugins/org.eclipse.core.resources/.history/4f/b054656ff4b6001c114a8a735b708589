@@ -1,0 +1,23 @@
+package objectclass;
+
+public class Objectclass5 {
+	 double salary=1234;
+	double empid;
+	
+	Objectclass5(){
+		empid=salary;	
+	}
+	public double tostring() {
+return salary;
+	}
+	public double hashcode() {
+		return salary;
+	}
+	public static void main(String[] args) {
+		Objectclass5 d1=new Objectclass5 ();
+		System.out.println(d1);
+		System.out.println(d1.tostring());
+		System.out.println(d1.hashCode());
+	}
+
+}

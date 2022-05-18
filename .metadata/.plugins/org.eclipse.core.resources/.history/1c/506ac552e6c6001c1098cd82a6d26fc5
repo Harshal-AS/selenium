@@ -1,0 +1,34 @@
+package locators;
+
+//import java.awt.Dimension;
+//import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Amazonwebpagenavigation {
+
+	public static void main(String[] args) throws InterruptedException {
+		String driver=".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver",driver);
+		 ChromeDriver cdriver=new ChromeDriver();
+		 //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Thread.sleep(1000);
+		cdriver.get("https://www.amazon.in");
+		Thread.sleep(2000);
+//cdriver.manage().window().setSize(new Dimension(50.10,700));
+		cdriver.manage().window().maximize();
+		String actualtitle=cdriver.getTitle();
+		String expectedtitle="amazon-log";
+		System.out.println("actualtitle: "+actualtitle);
+		System.out.println("expectedtitle: "+expectedtitle);
+		WebElement c=cdriver.findElement(By.id("nav_cs_mobiles"));
+		c.click();
+//		cdriver.get("https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles");
+//			String a=cdriver.getTitle();
+//			System.out.println("a:"+a);
+//			
+}
+}

@@ -1,0 +1,23 @@
+package localglobalvariables;
+
+public class Assignment {
+ int age=12;
+static double salary=1234.56;
+
+
+
+void method() {
+	System.out.println( Assignment.salary);
+}
+static void men() {
+	System.out.println(r1.age);
+}
+
+	public static void main(String[] args) {
+		Assignment r1=new Assignment();
+		//System.out.println(r1.age);
+		System.out.println( Assignment.salary);
+		System.out.println(r1.age);
+	}
+
+}

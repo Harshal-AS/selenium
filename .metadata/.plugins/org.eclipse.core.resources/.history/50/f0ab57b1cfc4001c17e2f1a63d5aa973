@@ -1,0 +1,27 @@
+package locators;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		/*1.launch the new Chrome browser
+		 *2.open https://demo.actitime.com/
+		 *3.get page title name & title length
+		 *4.print page title & title length on the eclipse console
+		 *5.get page url &verify if  it is a correct page opened
+		 *6.enter the valid username & password
+		 *7.click on login button
+		 *8.print the title  on the consol
+		 *9.close the browser
+		 */
+		//1.launch the new Chrome browser
+		
+		// System path
+		String driver1=".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driver1);
+		WebDriver edriver=new ChromeDriver ();
+	}
+
+}

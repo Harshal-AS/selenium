@@ -1,0 +1,11 @@
+package Logicalprogramjavainterview;
+
+public class Sta {
+
+	public static void main(String[] args) {
+		String s="THIS IS MY FIRST INTERVIEW";
+		System.out.println(s.length());
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package CALENDER;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CalenderHandling {
+
+	public static void main(String[] args) {
+		WebDriver s1=new ChromeDriver();
+		WebDriver driver=s1.get("chrome", "https://www.makemytrip.com/");
+	}
+
+}

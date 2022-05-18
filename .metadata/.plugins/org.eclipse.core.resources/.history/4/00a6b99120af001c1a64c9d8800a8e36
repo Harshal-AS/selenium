@@ -1,0 +1,16 @@
+package finalkeywords;
+
+public class Finalkeywords1 {
+
+
+	final int speedlimit;// blank final variable
+	 Finalkeywords1() {
+		 
+		speedlimit = 70;
+		//System.out.println(speedlimit);
+	}
+	public static void main(String args[]) {
+		 Finalkeywords1 f1=new  Finalkeywords1();
+		System.out.println(f1.speedlimit); 
+	}
+}

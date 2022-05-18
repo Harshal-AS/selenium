@@ -1,0 +1,31 @@
+package inheritance;
+
+class maruti {
+	maruti() {
+		System.out.println("maruti class cons");
+	}
+
+	public void tye() {// normal method
+		System.out.println("maruti suzuki class name");
+	}
+}
+
+class cars extends maruti {// subclss or childclass=cars/superclass or parentd class=maruti
+	cars() {
+		System.out.println("default cons cars class compile by java compiler");
+	}
+
+	public void harshal() {
+		System.out.println("hi harshal cars childclass and maruti parentsclass");
+	}
+}
+
+public class Interface1 {
+
+	public static void main(String[] args) {
+		cars ref = new cars();// object of childclass
+		ref.harshal();// call method to childclass
+		ref.tye();// call method to parent class
+
+	}
+}

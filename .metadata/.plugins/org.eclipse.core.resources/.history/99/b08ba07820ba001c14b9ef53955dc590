@@ -1,0 +1,37 @@
+package Arroys;
+
+public class Singledimensionall {
+
+	public static void main(String[] args) {
+		char []d;//declared
+		d=new char[4];// declared & initilized 
+// or
+	//char []a=new char[];
+		System.out.println("not initilized ");
+		System.out.println(d[0]);// o =space
+		System.out.println(d[1]);// o =null value  Because not initilized the value
+		System.out.println(d[2]);// o =space
+		System.out.println(d[3]);// o =space
+//
+//	d[0]='A';
+//    d[1]='B';
+//    d[2]='C';
+//    d[3]='D';
+		//OR
+		
+    System.out.println("after initilized ");
+    //access the element of the array
+    System.out.println(d[0]);// 20
+    // change the element of the array 
+   d[0]='z';
+    System.out.println(d[0]);
+    //access the element of the array
+	System.out.println(d[1]);//30    After initilized the value 
+	 // change the element of the array 
+	d[1]='H';
+	System.out.println(d[1]);
+	System.out.println(d[2]);// 40
+	System.out.println(d[3]);// 50
+}
+
+}

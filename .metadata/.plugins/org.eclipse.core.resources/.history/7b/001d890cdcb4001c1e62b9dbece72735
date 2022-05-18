@@ -1,0 +1,27 @@
+package castinginjava;
+class Man{
+	 int  harshal(int a,int b) {//static method
+    int res=a+b;
+    System.out.println(res);
+	return res;
+	}
+}
+	class Chiken extends Man{
+		 double harshal1(double salary) {//non static method
+		System.out.println("non static void method");
+			return salary;
+		}	
+	}
+	
+
+public class Updowncasting {
+
+	public static void main(String[] args) {
+    // upcasting = object created childclass(B) reference to parent class(A)3
+		Man a1=new Chiken();
+		
+		
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package castinginjava;
+
+public class Castingall {
+
+	public static void main(String[] args) {
+		byte a=12;
+		short b=a;//widening casting .1.implicit 2.explicit
+		int c =a;//implicit
+		int g=(int) a;
+		long d=a;//implicit
+		long h=(long)a;
+		float e=a;//implicit
+		float i=(float)a;
+		double f=a;//implicit
+		double j=(double)a;//explicit
+		
+				
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package polymorphism;
+
+public class Compiletimepoly1 {
+	void h1() {
+		
+	}
+	static void h1(int age) {
+		System.out.println("h1 method name parmeter pass");
+	}
+	int  h1(int a,int b) {
+		int res =a+b;
+		System.out.println("Addition a+b: "+res);
+		return res;
+	}
+
+
+	public static void main(String[] args) {
+		Compiletimepoly1 r1=new Compiletimepoly1 ();
+		r1.h1();
+		Compiletimepoly1.h1(10);
+		System.out.println("non static method overloading: "+r1.h1(12, 14));
+		
+		
+	}
+
+}

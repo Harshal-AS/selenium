@@ -1,0 +1,43 @@
+package abstract1;
+
+abstract class wheel {// abstract class
+	int empid = 1234;
+	int age = 10;
+
+	wheel(int empid, int age) {// cons
+		System.out.println("cons use ");
+	}
+
+	public abstract void harshal();
+
+	public void display() {// non abstract method normal method
+		this.age = age;// this statements use
+		this.empid = empid;// this statements use
+		System.out.println("wheel parents class");
+	}
+}
+
+class tyre extends wheel {
+	int age = 10;// global variables
+
+	public void harshal() {
+System.out.println("abstract method overried to subclass ");
+	}
+
+	tyre(int age) {
+		super(5896, 50);// super statement use in only cons
+	}
+
+	static double kunal(double salary) {// static methods
+		return salary;
+	}
+
+}
+
+public class Abstract2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

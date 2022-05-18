@@ -1,0 +1,38 @@
+package locators;
+
+//import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class Tecklisticassignment {
+
+	public static void main(String[] args) {
+		//String driver1 = System.getProperty(key, def)
+		System.setProperty("webdriver.chrome.driver", "./executables/chromedriver.exe");
+		WebDriver as = new ChromeDriver();
+         as.get("https://www.techlistic.com/");
+         
+       // as.manage().window().setSize(new Dimension(500,700));
+         as.manage().window().maximize();
+         as.get("https://www.techlistic.com/p/java.html");
+         String actualtitle=as.getTitle();
+         String expectedtitle="techlistic java";
+         System.out.println("actualtitle: "+actualtitle);
+         System.out.println("expectedtitle: "+expectedtitle);
+         if(actualtitle.equals(expectedtitle)) {
+        	 System.out.println("actual java title pass");
+         }
+         else {
+        	 System.out.println("expected java title fail");
+         }
+        // as.navigate().back();
+         
+	}
+
+}
+
+
+
+
+
+//https://www.techlistic.com/p/java.html

@@ -1,0 +1,15 @@
+package testngproject;
+
+public class TestNG1 {
+
+	public static void main(String[] args) {
+		TestNG1 a=new TestNG1();
+		a.harshal();
+		
+	}
+
+
+
+public void harshal() {
+	System.out.println("hi harshal");
+}}

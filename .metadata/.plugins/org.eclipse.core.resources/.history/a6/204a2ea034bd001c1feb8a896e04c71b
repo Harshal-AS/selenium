@@ -1,0 +1,19 @@
+package exceptionhandling;
+import java.util.Scanner;
+public class Exceptionhandling2 {
+
+	public static void main(String[] args) {
+		System.out.println("program start");
+		//1.abnormal condition
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter array size: ");
+		int size=s.nextInt();
+		int[] empIds = new int[2];
+		//ArrayIndexOutOfBoundsException
+		
+	try {
+			System.out.println(empIds[]);// ArrayIndexOutOfBoundsException
+
+	}
+
+}

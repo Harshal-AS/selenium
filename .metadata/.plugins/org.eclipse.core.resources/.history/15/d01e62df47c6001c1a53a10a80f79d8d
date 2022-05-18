@@ -1,0 +1,23 @@
+package locators;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Actitimeloginlogoutvalidation {
+
+	public static void main(String[] args) {
+		String driver1=".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driver1);
+		WebDriver a=new ChromeDriver ();
+		a.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+     a.get("https://demo.actitime.com/login.do");
+    String actualtitle=  a.getTitle();
+    String expectedtitle= "actiTime -login" ;
+    System.out.println("actualtitle: "+actualtitle);
+    System.out.println("expectedtitle: "+expectedtitle);
+    
+    
+	}
+}

@@ -1,0 +1,46 @@
+package locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment3 {
+
+	public static void main(String[] args) {
+		//relative path
+		String driver1=".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driver1);
+		WebDriver cdriver=new ChromeDriver ();
+		//open chrome browser
+		cdriver.get("https://www.vtiger.com");
+		//validation login page open or not
+		String actualurl=cdriver.getCurrentUrl();
+		String expectedurl="https://www.vtiger.com";
+		System.out.println("actualurl: "+actualurl);
+		System.out.println("expectedurl: "+expectedurl);
+		if(actualurl.contains(expectedurl)) {
+			System.out.println("url psass");
+		}
+		else {
+			System.out.println("url failed");
+		}
+			System.out.println("url length: "+actualurl.length());
+			//remove existing text from username field 
+			WebElement usernamefield=cdriver.findElement(By.name("username"));
+			//type username 'admin'
+			usernamefield.sendKeys("admin");
+			//remove existing text from password field
+			WebElement passwordfield=cdriver.findElement(By.name("password"));
+			// type username 'admin'
+			passwordfield.sendKeys("Test@123");
+			// click on login button
+			WebElement loginButton=cdriver.findElement(By.id("loginButton"));
+			loginButton.click();
+	}
+		}
+		
+	
+
+	
+

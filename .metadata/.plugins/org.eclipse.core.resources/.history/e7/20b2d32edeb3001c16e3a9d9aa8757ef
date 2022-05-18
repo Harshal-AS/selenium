@@ -1,0 +1,27 @@
+package castinginjava;
+class Honda{
+	void claame() {          // non primitive casting use only inheritance
+		System.out.println("honda");
+	}
+}
+	class Bike1 extends Honda{
+		void harshal() {
+		System.out.println("subclass bike and super class honda");	
+	}
+}
+
+
+public class Nonprimativecasting1 {
+
+	public static void main(String[] args) {
+	Bike1 ref=new Bike1();
+	ref.harshal();
+	ref.claame();
+	Honda ref1=new Honda ();
+	ref1.claame();
+	
+	
+
+	}
+
+}

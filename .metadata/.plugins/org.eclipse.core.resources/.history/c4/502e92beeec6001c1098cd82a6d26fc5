@@ -1,0 +1,53 @@
+package locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+//import java.awt.Dimension;
+//import java.util.concurrent.TimeUnit;
+
+//import org.openqa.selenium.By;
+//import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Amazonwebpagenavigation {
+
+	public static void main(String[] args) throws InterruptedException {
+		String driver=".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver",driver);
+		 ChromeDriver cdriver=new ChromeDriver();
+		 //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Thread.sleep(1000);
+		cdriver.get("https://www.amazon.in");
+		Thread.sleep(2000);
+//cdriver.manage().window().setSize(new Dimension(50.10,700));
+		cdriver.manage().window().maximize();
+		String actualtitle=cdriver.getTitle();
+		String expectedtitle="amazon-log";
+		System.out.println("actualtitle: "+actualtitle);
+		System.out.println("expectedtitle: "+expectedtitle);
+		WebElement c=cdriver.findElement(By.id("twotabsearchtextbox"));
+		c.sendKeys("Mobies");
+		cdriver.get("https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles");
+			String a=cdriver.getTitle();
+			String expectedurl="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles";
+		System.out.println("a:"+a);
+		System.out.println("a:"+expectedurl);
+		cdriver.navigate().back();
+	
+		String actualtitle1=cdriver.getTitle();
+		String expectedtitle1="amazon-in";
+	System.out.println("a:"+actualtitle1);
+		System.out.println("expectedtitle1:"+expectedtitle1);
+		if(actualtitle1.contains(expectedtitle1)) {
+		System.out.println("URL PASS");
+		
+		}
+		else {
+			System.out.println("URL fail");
+		cdriver.close();
+		}
+			
+		}
+}

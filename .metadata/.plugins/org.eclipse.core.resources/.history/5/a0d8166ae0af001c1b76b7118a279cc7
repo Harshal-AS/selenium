@@ -1,0 +1,33 @@
+package inheritance;
+class A1{          // parents class
+	int age =12;
+	static double salary=100.10;
+	static int  empid=1234;
+}
+class B1 extends A1{
+	int age1 =10;
+	static double salary=100.20;
+	static int  empid=1235;
+}
+class C1 extends B1{
+	int age1 =8;
+}
+	
+
+
+
+public class Inheriitance3 {
+
+	public static void main(String[] args) {
+		System.out.println("program start");
+		//class A1 static member acess 
+		System.out.println("static memeber"+A1.empid);
+		System.out.println("static memeber"+A1.salary);
+		//class B1 static member acess 
+		System.out.println("static memeber"+B1.salary);
+		System.out.println("static memeber"+B1.empid);
+		//class C1 static member acess 
+		
+	}
+
+}

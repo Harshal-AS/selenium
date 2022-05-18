@@ -1,0 +1,11 @@
+package constructor;
+
+public class Constructor1 {
+int age=12;
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

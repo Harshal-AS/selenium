@@ -1,0 +1,72 @@
+package assignments;
+/*pillars of oops (object oriented programming concept)
+ * 1.inheritance
+ * 2.Abstraction
+ * 3.Encapsulation
+ * 4.Polymorphism
+*Inheritance=When one object acqiures all the properties & behaviors of the parent 
+ *parent class is called inheritance
+ * Types of Inheritance
+ * a.single Inheritance
+ * b.multilevel Inheritance
+ * c.hierachical Inheritance
+ * d.multiple Inheritance
+ */
+ //a.single Inheritance
+class Car{
+	
+	Car(){  //superclass cons does not explicit the because the java compile at compile time
+		  //default constructor with default super() mean cons call automaticlly java compiler
+	}
+	public	static void harshal(int age) {  // method overriding
+			System.out.println("method overriding: "+age);
+		}
+		void Display() {  // regular method
+			System.out.println("regular method");
+			
+		}
+		
+}
+	class Suzuki extends Car{
+		int age=12;
+		 double salary=456789.20;// cons initilized instance member of the class
+		Suzuki(int age,double salary){// cons does not explicit the 
+			this.age=age;// super keyword = diff between parentclass & childclass 
+			this.salary=salary;	// member at same variable name 
+			System.out.println(this.age);
+			System.out.println(this.salary);
+			
+		}
+		
+	public	static void harshal(int age) {  // method overriding
+			System.out.println("method overriding: "+age);
+			
+		}
+		void add(int age) {  // regular method
+	
+			System.out.println(age+"  "+salary);//10,200.10
+			this.age=age;
+			System.out.println(this.age);
+		}
+	}
+			
+public class Inheritancealltypes {
+	
+	public static void main(String[] args) {
+		Suzuki n1=new Suzuki(10,200.10);// reference to childclass object created to childclass
+		Suzuki.harshal(5);
+		n1.add(10);
+		Car.harshal(4);
+		
+		
+		Car n2=new Suzuki(10,12.10);
+		n2.Display();
+		Car.harshal(4);
+		
+		
+	}
+/*Multilevel Inheritance
+ * 
+ */
+
+}

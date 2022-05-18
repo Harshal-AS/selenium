@@ -1,0 +1,23 @@
+package polymorphism;
+class Tea {
+	void addition(int age,double salary) {
+		double res=age+salary;
+		System.out.println("res=age+salary: "+res);
+	}
+}
+class Break extends Tea{
+	 void addition(int age,double salary) {
+		double res=age+salary;
+		System.out.println("res=age+salary: "+res);
+	}
+}
+
+public class Runtimepoly4 {
+
+	public static void main(String[] args) {
+		 Tea s1=new Break();//upcasting java compiler 
+		 s1.addition(40, 101000.10);
+
+	}
+
+}

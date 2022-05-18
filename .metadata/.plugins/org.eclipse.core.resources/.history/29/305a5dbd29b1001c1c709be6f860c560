@@ -1,0 +1,32 @@
+package encapsulation;
+
+class jaggu {
+	private float f;
+	private boolean b;
+	static int age = 50;
+	double salary = 10000.10;
+
+//getter method only read only 
+	public float getf() {
+		System.out.println("get float method ouside the class");
+		return f;
+	}
+
+	public boolean getb() {
+		System.out.println("get boolean method ouside the class");
+		return b;
+	}
+}
+
+public class Encapsulation2 {
+
+	public static void main(String[] args) {
+		jaggu h1 = new jaggu();
+		System.out.println("program start");
+		System.out.println("access the private data membe outside the class help to getter:" + h1.getf());
+		System.out.println("access the private data membe outside the class help to getter:" + h1.getb());
+		System.out.println("program end");
+		System.out.println("static gv:" + jaggu.age);
+		System.out.println(" non static gv:" + h1.salary);
+	}
+}

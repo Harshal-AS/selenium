@@ -1,0 +1,12 @@
+package handlingmultipleelements;
+
+import org.openqa.selenium.WebDriver;
+
+public class WebDrivermanager {
+
+	public static void main(String[] args) {
+		WebDriver.ChromeDriver.setup();
+
+	}
+
+}

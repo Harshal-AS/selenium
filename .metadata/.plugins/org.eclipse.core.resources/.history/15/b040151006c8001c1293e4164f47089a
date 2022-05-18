@@ -1,0 +1,27 @@
+package handlingmultipleelements;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FlipkartWebPage {
+
+	public static void main(String[] args) {
+		//relative path
+		String driver1=".//executables.chromedriver.exe";
+		//set  driver execytable the path System.setProperty(String key,String value);
+		System.setProperty("webdriver.chrome.driver", driver1);
+		// instance of the required web page
+		WebDriver flipkart=new ChromeDriver();
+		//maximaze browser operation
+		flipkart.manage().window().maximize();
+		// implicit wait
+		flipkart.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		//launch the url in flipkart
+		flipkart.get("https://www.flipkart.com");
+		//use the findelements method
+		
+	}
+
+}

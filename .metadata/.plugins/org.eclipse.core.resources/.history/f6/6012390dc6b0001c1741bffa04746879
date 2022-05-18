@@ -1,0 +1,19 @@
+package inteface;
+interface A{
+	public void harhsal();
+	
+}
+interface B {
+	public void harhsal1();
+}
+interface C extends A,B {//3 INTERFACE USE THE EXTENDS 
+	public void harhsal2();
+}
+
+public class Interface2 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

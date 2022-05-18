@@ -1,0 +1,19 @@
+package seleniumprogram;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+//import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Openfirfox {
+
+	public static void main(String[] args) {
+		String driverPath1=".\\executables\\geckodriver.exe";
+		//or using System class
+		String driverPath2=System.getProperty("user.dir")+"\\executables\\geckodriver.exe";
+		//Set the driver executable path using System.setProperty(String key,String value)
+		System.setProperty("webdriver.gecko.driver", driverPath1);
+		//create an instance of required browser class
+		FirefoxDriver fdriver=new FirefoxDriver();
+	}
+
+}

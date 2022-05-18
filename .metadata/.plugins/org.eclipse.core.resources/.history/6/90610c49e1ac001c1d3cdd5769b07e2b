@@ -1,0 +1,16 @@
+package constructor;
+
+public class Constructor1 {
+int age=12;
+
+Constructor1(){
+	System.out.println("defaut constrctor ");//default  constructor written by java compiler at time of compile time 
+}
+	
+
+	public static void main(String[] args) {
+		Constructor1 h1=new Constructor1 ();//no parameter pass to constructor so mot aasign the value
+System.out.println("non static gv:"+h1.age);
+	}
+
+}

@@ -1,0 +1,16 @@
+package selemiumfolder;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class OpenFirefox {
+
+	public static void main(String[] args) {
+		//String driverPath2=D:"\AUTOMATION\ACCELERATION\worksapce\SeliniumBasics\Drivers\geckodriver.exe";
+		String driverPath1=".//Drivers//geckodriver.exe";
+		String driverPath3=System.getProperty("user.dir")+"//Drivers//geckodriver.exe";
+		System.setProperty("webdriver.gecko.driver", driverPath3);
+		FirefoxDriver a=new FirefoxDriver();
+		
+	}
+
+}

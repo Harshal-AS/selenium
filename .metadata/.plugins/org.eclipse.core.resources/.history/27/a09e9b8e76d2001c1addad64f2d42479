@@ -1,0 +1,19 @@
+package testngproject;
+
+import org.testng.annotations.Test;
+
+public class TestNG5 {
+	@Test
+	public void harshal1() throws InterruptedException {
+		Thread.sleep(2000);
+	System.out.println("how are you  ");
+	}
+	@Test
+	public void harshal2() throws InterruptedException {
+		Thread.sleep(2000);
+		System.out.println("i am fine ");
+	}
+	
+	}
+
+// if a class more than one test method then the test method executed will be alphabetical order

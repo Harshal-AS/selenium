@@ -1,0 +1,34 @@
+package locators;
+
+import org.openqa.selenium.By;
+
+//import org.openqa.selenium.By;
+
+//import java.awt.Dimension;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Tecklisticassignment {
+
+	public static void main(String[] args) {
+		String driver1 = ".//executables//geckodriver.exe";
+		// set driver1 executable path using Ststem.setProperty(String key,String
+		// value);
+		System.setProperty("webdriver.gecko.driver", driver1);
+         WebDriver as=new FirefoxDriver();
+         as.get("https://www.techlistic.com/");
+       // as.manage().window().setSize(new Dimension(500,700));
+         as.manage().window().maximize();
+        WebElement a= as.findElement(By.tagName("a"));
+         a.sendKeys("Java Control Statements");
+	}
+
+}
+
+
+
+
+
+//https://www.techlistic.com/p/java.html

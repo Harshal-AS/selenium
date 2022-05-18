@@ -1,0 +1,72 @@
+package locators;
+
+import java.util.concurrent.TimeUnit;
+
+//import java.util.concurrent.TimeUnit;
+
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+
+//import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Assigment4  {
+
+	public static void main(String[] args)  {
+		String driver1 = ".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driver1);
+		WebDriver cdriver = new ChromeDriver();
+        //implicit cdriver=ref
+	cdriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		cdriver.get("https://demo.vtiger.com/vtigercrm/index.php");
+
+		String actualtitle = cdriver.getTitle();
+		String expectedtitle = "vtiger ";
+		System.out.println("actualtitle: " + actualtitle);
+		System.out.println("expectedtitle: " + expectedtitle);
+		System.out.println("actual length:" + actualtitle.length());
+
+		String actualurl = cdriver.getCurrentUrl();
+		String expectedurl = "https://demo.vtiger.com/vtigercrm/index.php";
+		System.out.println("actualurl: " + actualurl);
+		System.out.println("actualurl: " + expectedurl);
+
+		if (actualurl.contains(expectedurl)) {
+			System.out.println("url pass");
+		} else {
+			System.out.println("url failed");
+
+		}
+		String sourcelength = cdriver.getPageSource();
+		System.out.println("sourcelength: " + sourcelength.length());
+		cdriver.findElement(By.className("buttonBlue")).click();
+		
+		    WebElement a= cdriver.findElement(By.name("username"));
+		    a.sendKeys("harshal");
+		    a.clear();
+		    a.sendKeys("admin");
+		    
+		    WebElement b= cdriver.findElement(By.name("username"));
+		    b.sendKeys("na@1234");
+	    b.clear();
+	    b.sendKeys("Test@123");
+		    
+	    WebElement c= cdriver.findElement(By.id("loginButton"));
+		   c.click();
+		   //cdriver.getTitle();
+		  
+		   cdriver.findElement(By.id("logoutLink")).click();
+		   
+		  // cdriver.close();
+		  WebDriverWait wait=new WebDriverWait(cdriver,20);
+		
+            wait.until(ExpectedConditions.elementToBeClickable(By.id("logout")));
+			System.out.println("After login page title: "+cdriver.getTitle());
+	}
+}

@@ -1,0 +1,41 @@
+package constructor;
+
+public class Constructor2 {
+	//int age = 50;// constructor is used initilized instance member of the class
+	//int empid = 1234;
+
+	Constructor2() {
+		System.out.println("zero pararemeterized constructor");
+	}
+
+	Constructor2(int num1) {
+		System.out.println(num1);
+	}
+
+	Constructor2(int num1, char c) {
+		System.out.println(num1);
+		System.out.println(c);
+		
+	}
+
+	Constructor2(int num1, double salary, int num3) {
+		System.out.println("three pararemeterized constructor");
+	}
+
+	Constructor2(int num1, double num2, int num3, double empid) {
+		System.out.println("four pararemeterized constructor");
+	}
+
+	public static void main(String[] args) {
+	//Constructor2 ref1 = new Constructor2();// constructor call and assign the value
+//		System.out.println("non static :" + ref.age);// constructor is used initilized instance member of the class
+//		System.out.println("non static :" + ref.empid);// constructor is used initilized instance member of the class
+		//Constructor2 ref5 = new Constructor2();
+		Constructor2 ref2 = new Constructor2(40);
+		Constructor2 ref3 = new Constructor2(40, 'A');
+		Constructor2 ref4= new Constructor2(70, 60000, 65);
+		Constructor2 ref5 = new Constructor2(70, 50, 20, 12345);
+
+	}
+
+}

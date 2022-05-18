@@ -1,0 +1,20 @@
+package objectclass;
+class Z{
+	void harshal() {
+		System.out.println("hi harshal");
+	}
+	
+}
+public class Objectclass2 extends Z {
+
+	public static void main(String[] args) {
+		Z s=new Z();
+		System.out.println(s);// objectclass.Z(fully classified name) implicit
+		System.out.println(s.toString());// objectclass.Z(fully classified name) explicit
+		System.out.println(s.hashCode());//convert hexadecimal to decimal
+		
+		Z s1=new X();
+		
+	}
+
+}

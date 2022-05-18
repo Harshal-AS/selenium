@@ -1,0 +1,10 @@
+package handlingdropdown;
+
+public class Multipledropdown {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

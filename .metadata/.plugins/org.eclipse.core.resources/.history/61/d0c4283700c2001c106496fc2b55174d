@@ -1,0 +1,17 @@
+
+public class OpenFirefox {
+
+	public static void main(String[] args) {
+		//Absoute path
+		String driverPath1=D:\AUTOMATION\ACCELERATION\worksapce\SelemiumBasics\OpenFirefox.java;
+				// Relative path
+	    String driverPath2=	".//drivers//grckodrivers.exe";
+        // or using system class
+	    String driverPath3=System.getProperty("user.dir")+".//drivers//grckodrivers.exe";
+	  //Set the driver executable path using System.setProperty(String key,String value)
+	    System.setProperty("webdriver.gecko.driver",driverPath3);
+	  //create an instance of required browser class
+	    FirefoxDriver fdriver=new FirefoxDriver();
+	    
+}
+}

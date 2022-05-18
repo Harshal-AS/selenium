@@ -1,0 +1,38 @@
+package constructor;
+
+public class Cons7 {
+	int age;
+	double empid;
+Cons7(){
+	System.out.println("user define zero parameterized constructor");
+	age=12;
+	empid=1234.10;	
+}
+Cons7(int num1,int num2){
+	System.out.println("user define parameterized constructor");
+	System.out.println("user define parameterized constructor int, int ");
+}
+void display(boolean b) {
+	System.out.println("boolean b"+b);
+
+}
+class Cons10{
+	
+	System.out.println("dafault type of constructor but madatary statement ")
+	}
+
+	
+
+	public static void main(String[] args) {
+		Cons7 h1=new Cons7 ();
+		System.out.println("non static value initilized age"+h1.age);
+		System.out.println("non static value initilized empid"+h1.empid);
+		Cons7 h2=new Cons7 (10,20);
+		h2.display(false);
+		Cons10 h3=new Cons10();
+		
+		
+		
+	}
+
+}

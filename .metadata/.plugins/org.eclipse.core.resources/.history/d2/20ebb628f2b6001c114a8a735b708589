@@ -1,0 +1,28 @@
+package objectclass;
+
+public class Objectclass4 {
+
+static int rollno;
+ int lastno=400;
+ double empid=1234;
+ double salary;
+ Objectclass4(){
+	
+	 rollno=lastno;
+	 salary=empid;
+ }
+ // @ overridide
+ public int hashcode() {
+	 return rollno;
+	 
+ }
+
+
+	public static void main(String[] args) {
+		 Objectclass4 w1=new  Objectclass4 ();
+		 System.out.println(w1);
+		 System.out.println(w1.toString());
+		 System.out.println(w1.hashcode());
+	}
+
+}

@@ -1,0 +1,24 @@
+package seleniumprogram;
+
+import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class OpenChromeWithGenericWay {
+
+	public static void main(String[] args) {
+		// absolute pathe	
+		String driverPath1="D:\\AUTOMATION\\ACCELERATION\\worksapce\\SeleniumBasicProgram\\executables\\chromedriver.exe";
+		     // relative path
+		String driverPath2=".//executables//chromedriver.exe";
+		// system class 
+		String driverPath3=System.getProperty("user.dir")+"//executables//chromedriver.exe";
+
+		System.setProperty("webdriver.chrome.driver", driverPath1);
+
+		//object 
+		WebDriver driver=new ChromeDriver();
+        // this is real time example of run-time/dynamic/late/dynamic binding/
+	}
+
+}

@@ -1,0 +1,15 @@
+package exceptionhandling;
+import java.util.Scanner;
+//import java.util.Scanner;
+public class Exceptionhandling1 {
+
+	public static void main(String[] args) {
+		System.out.println("program start");
+		//1. abnormal statements
+		int i,k ,j;
+		Scanner s=new Scanner(System.in);
+		
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package seleniumprogram;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignments2 {
+
+	public static void main(String[] args) {
+		/*
+		 * 1.launch the web driver.
+		 * 2.Open the URL https://www.facebook.com in the current browser
+		 * 3.fetching home page title
+		 * 4.Verify actual title of the home page with expected title 
+		 * 5.print page length on eclipse console
+		 * close the browser
+		 */
+		// 1.launch the web driver.
+		// relative path
+		String driver1=".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driver1);
+		WebDriver ref=new ChromeDriver();
+		 // 2.Open the URL https://www.facebook.com in the current browser
+		ref.get("https://www/facebook.com");
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package castinginjava;
+
+public class Primitivecasting {
+
+	public static void main(String[] args) {
+		int age=13;
+		double salary=age;//implicit automatic conversion java compiler at compile time
+		double salary1=(double)age;// manual conversion written by programmer 
+		System.out.println(age);
+		System.out.println(salary);
+		System.out.println(salary1);
+		System.out.println(".............///////////////");
+		// the above statemens widening casting
+		
+		double a=1234;
+		int b=(int)a;// narrowing only use the explicit (manual) not use the implicit 
+		System.out.println(a);
+		System.out.println(b);
+		
+		
+	}
+
+}

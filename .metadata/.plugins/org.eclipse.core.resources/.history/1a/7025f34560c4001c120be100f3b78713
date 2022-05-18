@@ -1,0 +1,17 @@
+package seleniumprogram;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Firefoxgenericway {
+
+	public static void main(String[] args) {
+		String driver1="D:\\AUTOMATION\\ACCELERATION\\worksapce\\SeleniumBasic\\executables\\geckodriver.exe";
+		String driver2=".//executables//geckodriver";
+		String driver3=System.getProperty("used.dir")+".//executables//geckodriver";
+		System.setProperty("webdriver.gecko.driver",driver2);
+		WebDriver fdriver=new FirefoxDriver();
+		
+	}
+
+}

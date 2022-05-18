@@ -1,0 +1,23 @@
+package inteface;
+interface A{
+	int age=45;
+	double salary=4521.10;
+	public void harshal();//by defaut public abstract  
+}
+class B implements A{
+	double salary=1234;
+	int age;
+	public void harshal() {
+		System.out.println("abstract1 method ");
+	}
+	
+}
+
+public class Interface3 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

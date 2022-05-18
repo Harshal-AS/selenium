@@ -1,0 +1,22 @@
+package inteface;
+interface Z{
+	int b=45;//variable use inteface and also method no cons use
+	double empid=4521.45;
+	public void harshal();//by defaut public abstract  
+}
+class Y implements Z{
+	double salary=1234.10;
+	int ag=10;
+	public void harshal() {
+		System.out.println("abstract1 method ");
+	}
+}
+
+public class Interface3 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package castinginjava;
+
+public class Primativecasting1 {
+
+	public static void main(String[] args) {
+	byte a=8;
+	short b=a;
+	int c=a;
+	long d=a;
+	float e=a;
+	double f=a;
+	System.out.println("byte to short:"+a);
+	System.out.println("byte to int:"+a);
+	System.out.println("byte to long:"+a);
+	System.out.println("byte to float:"+a);
+	System.out.println("byte to double:"+a);
+	
+	}
+
+}

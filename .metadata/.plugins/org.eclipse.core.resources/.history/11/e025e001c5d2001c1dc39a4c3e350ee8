@@ -1,0 +1,23 @@
+package testngproject;
+
+import org.testng.annotations.Test;
+
+public class TestNGPARA4 {
+@Test(dependsOnMethods="signIn",enabled=true)
+public void a() {
+	System.out.println("dependent method");
+}
+@Test(dependsOnMethods="login",enabled=true)
+public void b() {
+	System.out.println("dependent method login in sign up");
+}
+@Test(enabled=true)
+public void c() {
+	System.out.println("hi bro ");
+}
+	public static void main(String[] args) {
+		//dependent method depends to each other
+
+	}
+
+}

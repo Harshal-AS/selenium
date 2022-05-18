@@ -1,0 +1,36 @@
+package handlingmultipleelements;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Meeshoapp {
+
+	public static void main(String[] args) {
+		String driver1=".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver",driver1);
+		WebDriver megha=new ChromeDriver();
+		megha.manage().window().maximize();
+		megha.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		megha.get("https://www.meesho.com");
+		//String neha=megha.getTitle();	
+		System.out.println("neha: "+megha.getTitle());
+	//String pranjali=megha.getCurrentUrl();
+	System.out.println("pranjali: "+megha.getCurrentUrl());
+	
+	      WebElement shital=  megha.findElement(By.tagName("Input"));
+	         shital.sendKeys("Women Ethnic");
+	         shital.click();
+	            
+	
+	
+	
+//		
+//		text//Text__StyledText-sc-oo0kvp-0 gKkBjb
+		//NavBarDesktop__Subtitle-sc-1049n7y-0 cZxktd
+	}
+
+}

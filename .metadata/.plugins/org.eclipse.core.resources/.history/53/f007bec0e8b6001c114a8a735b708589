@@ -1,0 +1,14 @@
+package objectclass;
+class A{
+	static int age=12;
+	double salary=1000.10; 
+	int rollnumber =12345;
+}
+public class Objectclass1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

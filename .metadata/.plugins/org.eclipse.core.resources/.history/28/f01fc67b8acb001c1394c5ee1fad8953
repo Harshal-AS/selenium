@@ -1,0 +1,24 @@
+package handlingdropdown;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class CalenderHandlingredbus {
+
+	public static void main(String[] args) {
+		WebDriverManager.chromedriver().setup();
+		WebDriver as=new ChromeDriver();
+		as.manage().window().maximize();
+		//as.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		as.get("https://m.redbus.in");
+		
+		
+		
+
+	}
+
+}

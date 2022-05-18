@@ -1,0 +1,52 @@
+package assignments;
+/*pillars of oops (object oriented programming concept)
+ * 1.inheritance
+ * 2.Abstraction
+ * 3.Encapsulation
+ * 4.Polymorphism
+*Inheritance=When one object acqiures all the properties & behaviors of the parent 
+ *parent class is called inheritance
+ * Types of Inheritance
+ * a.single Inheritance
+ * b.multilevel Inheritance
+ * c.hierachical Inheritance
+ * d.multiple Inheritance
+ */
+ //a.single Inheritance
+class Car{
+	
+	Car(){  //superclass cons does not explicit the because the java compile at compile time
+		  //default constructor with default super() mean cons call automaticlly java compiler
+	}
+		static void harshal(int age) {  // method overriding
+			System.out.println("method overriding");
+		}
+		void Display() {  // regular method
+			System.out.println("regular method");
+		}
+		
+}
+	class Suzuki extends Car{
+		int age=12;
+		static double salary=456789.20;
+		Suzuki(int c,double d){// cons does not explicit the 
+			age=c;
+			salary=d;	
+		}
+		static void harshal(int age) {  // method overriding
+			System.out.println("method overriding");
+			
+		}
+		void add() {  // regular method
+			System.out.println("regular method");
+		}
+	}
+			
+
+public class Inheritancealltypes {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,65 @@
+package locators;
+
+
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Dimension;
+//import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class Tecklisticassignment {
+
+	public static void main(String[] args) {
+		//String driver1 = System.getProperty(key, def)
+		System.setProperty("webdriver.chrome.driver", "./executables/chromedriver.exe");
+		WebDriver as = new ChromeDriver();
+		as.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+         as.get("https://www.techlistic.com/");
+         
+        // Dimension a=new Dimension(500,700);
+       as.manage().window().setSize(new Dimension(500,700));
+         as.manage().window().maximize();
+        
+         as.get("https://www.techlistic.com/p/java.html/");
+         String actualtitle=as.getTitle();
+        // String currentur=as.getCurrentUrl();
+         System.out.println(actualtitle);
+        // System.out.println(currentur);
+         as.navigate().back();
+         
+         as.get("https:///www.techlistic.com/p/selenium-tutorials.html");
+         String currentur1=as.getCurrentUrl();
+         System.out.println(currentur1);
+         String actualtitle1=as.getTitle();
+         System.out.println(actualtitle1);
+         as.navigate().back();
+         
+         as.get("https://www.techlistic.com/p/bdd-tutorial-with-python-behave.html"); 
+         String currentur2=as.getCurrentUrl();
+         System.out.println(currentur2);
+         String actualtitle2=as.getTitle();
+         System.out.println(actualtitle2);
+         as.navigate().back();
+         
+         as.get("https://www.techlistic.com/p/software-testing.html");
+         String currentur3=as.getCurrentUrl();
+         System.out.println(currentur3);
+         String actualtitle3=as.getTitle();
+         System.out.println(actualtitle3);
+	
+        // as.close();
+	}
+}
+        
+//https://www.techlistic.com/p/selenium-tutorials.html
+	//https://www.techlistic.com/p/bdd-tutorial-with-python-behave.html
+
+
+
+
+
+
+
+//https://www.techlistic.com/p/java.html

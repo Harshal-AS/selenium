@@ -1,0 +1,34 @@
+package locators;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Assignment2 {
+
+	public static void main(String[] args) {
+		/*
+		 * 1.launch the new firefox browser 2.open https://demosite.executeautomation.com/Login.html/ 3.get page
+		 * title name & title length 4.print page title & title length on the eclipse
+		 * console 5.get page url &verify if it is a correct page opened 6.enter the
+		 * valid username as"execution" & password as "admin" 7.click on login button 8.print the title on the
+		 * console 9.click on logout 10.close the browser
+*/
+		//1.launch the new firefox browser
+		// relative path
+		String driver1=".//executables//geckodriver.exe";
+		//set driver1 executable path using Ststem.setProperty(String key,String value);
+		System.setProperty("webdriver.gecko.driver",driver1);
+		WebDriver firefox=new FirefoxDriver();
+		//2.open https://demosite.executeautomation.com/Login.html/
+		firefox.get("https://demosite.executeautomation.com/Login.html");
+		String actualtitle=firefox.getTitle();
+		String expectedtitle="demosite.executeautomation login";
+		//3.get page title name & title length
+		System.out.println("actualtitle: "+actualtitle);
+		System.out.println("expected title: "+expectedtitle);
+		System.out.println("title length: "+actualtitle.length());
+		
+	}
+
+}

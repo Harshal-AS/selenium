@@ -1,0 +1,10 @@
+package TESTNGPROJECT;
+
+public class TestNG1 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
+

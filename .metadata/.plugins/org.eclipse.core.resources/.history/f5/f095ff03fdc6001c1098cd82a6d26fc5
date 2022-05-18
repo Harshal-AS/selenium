@@ -1,0 +1,34 @@
+package locators;
+
+
+//import org.openqa.selenium.By;
+
+//import java.awt.Dimension;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Tecklisticassignment {
+
+	public static void main(String[] args) {
+		String driver1 = ".//executables.chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driver1);
+         WebDriver as=new ChromeDriver();
+         as.get("https://www.techlistic.com/");
+         String a=as.getTitle();
+         System.out.println(a);
+       // as.manage().window().setSize(new Dimension(500,700));
+         as.manage().window().maximize();
+//        WebElement a= as.findElement(By.tagName("a"));
+//         a.sendKeys("Java Control Statements");
+	}
+
+}
+
+
+
+
+
+//https://www.techlistic.com/p/java.html

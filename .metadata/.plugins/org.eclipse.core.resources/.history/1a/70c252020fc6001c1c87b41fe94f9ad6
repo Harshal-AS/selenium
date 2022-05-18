@@ -1,0 +1,10 @@
+package locators;
+
+public class Assigment4 {
+
+	public static void main(String[] args) {
+		String driver1=".//executables//chromedriver";
+		System.setProperty("webdriver.chrome.driver", driver1);
+	}
+
+}

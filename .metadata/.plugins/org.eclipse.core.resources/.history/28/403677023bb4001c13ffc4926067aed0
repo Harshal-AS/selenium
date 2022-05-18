@@ -1,0 +1,30 @@
+package castinginjava;
+class A{
+	void a1() {
+		System.out.println("parents a");
+	}
+}
+class B extends A{
+	void a2() {
+		System.out.println("B SUBCLASS A PARENTS CLASS");
+	}
+}
+class C extends B{
+	void a3() {
+		System.out.println("C SUBCLASS B PARENTS CLASS");
+}
+}
+public class Nonprimitive2 {
+
+	public static void main(String[] args) {
+		C z1=new C ();//reference & object of childclass C
+		z1.a3();
+		z1.a2();
+		z1.a1();
+        B z2=new B ();//reference & object of childclass B
+        z2.a2();
+        z2.a1();
+        
+
+}
+}

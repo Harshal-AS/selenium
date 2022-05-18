@@ -1,0 +1,32 @@
+package castinginjava;
+
+public class Primativecasting1 {
+
+	public static void main(String[] args) {
+	byte a=8;
+	short b=a;
+	short b1=(short)a;
+	int c=a;
+	int c1=(int)a;
+	long d=a;
+	long d1=(long)d;
+	float e=a;
+	float e1=(float)e;
+	double f=a;
+	double f1=(double)e;
+	System.out.println("byte to short:"+a);
+	System.out.println("byte to short:"+b);
+	System.out.println("byte to int:"+b1);
+	System.out.println("byte to int:"+c);
+	
+	System.out.println("byte to long:"+c1);
+	System.out.println("byte to long:"+d);
+	System.out.println("byte to float:"+d1);
+	System.out.println("byte to float:"+e);
+	System.out.println("byte to double:"+e1);
+	System.out.println("byte to double:"+f);
+	System.out.println("byte to double:"+f1);
+	
+	}
+
+}

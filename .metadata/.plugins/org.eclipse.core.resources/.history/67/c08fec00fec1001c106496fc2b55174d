@@ -1,0 +1,12 @@
+
+public class OpenFirefox {
+
+	public static void main(String[] args) {
+		//Absolute path
+		String DriverPath1=D:\AUTOMATION\ACCELERATION\worksapce\SelemiumBasics\OpenIE.java
+       //or
+				////or Relative path
+	   String DriverPath2=".//"
+	}
+
+}

@@ -1,0 +1,34 @@
+package encapsulation;
+class yogesh {
+	private int empid=4567;
+	private int age;
+	static int notebook=12;
+	double salary;
+	public int getempid() {
+		return empid;
+	}
+	public int getage() {
+		return age;
+	}
+	public void setempid(int a) {
+	empid=a;
+	}
+	public void setharshal(int z) {
+		age=z;
+	}}
+
+public class Encapsulation4 {
+
+	public static void main(String[] args) {
+	yogesh o1=new yogesh ();
+	System.out.println("getter method acess to private class age: "+o1.getempid());
+	System.out.println("getter method acess to private class empid: "+o1.getempid());
+	System.out.println("........,,,,,,,,,,,,,,,,,,,");
+	o1.setempid(70104);
+	o1.setharshal(40);
+	System.out.println("getter method acess to private class age: "+o1.getempid());
+	System.out.println("getter method acess to private class empid: "+o1.getempid());
+
+	}
+
+}

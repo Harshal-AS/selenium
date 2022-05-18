@@ -1,0 +1,12 @@
+package seleniumprogram;
+
+public class OpenFireFox {
+
+	public static void main(String[] args) {
+		//Absolute path 
+		String driver1="D:\\AUTOMATION\\ACCELERATION\\worksapce\\SeleniumBasicProgram\\executables\\geckodriver.exe";
+		String driver2=".//executables//geckodriver";
+		String driver=System.setProperty("user.dir")+"//executables//geckodriver";
+	}
+
+}

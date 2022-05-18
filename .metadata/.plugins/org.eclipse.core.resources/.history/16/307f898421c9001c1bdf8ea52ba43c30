@@ -1,0 +1,37 @@
+package handlingmultipleelements;
+
+import java.util.List;
+//import java.awt.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FlipkartWebPage {
+
+	public static void main(String[] args) {
+		//relative path
+		String driver1=".//executables//chromedriver.exe";
+		//set  driver execytable the path System.setProperty(String key,String value);
+		System.setProperty("webdriver.chrome.driver", driver1);
+		// instance of the required web page
+		WebDriver cdriver=new ChromeDriver();
+		//maximaze browser operation
+		cdriver.manage().window().maximize();
+		// implicit wait
+		cdriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		//launch the url in flipkart
+		cdriver.get("https://www.flipkart.com");
+		//use the findelements method
+		
+		List<WebElement> flipkart = cdriver.findElements(By.cssSelector("div#container>div>div>div>div>div>a"));
+		System.out.println("Number of Phones present on Home page: "+flipkart.size());
+		for(WebElement element:flipkart) {
+			System.out.println(element.getText());
+		}
+	}
+
+}
+//div#container>div>div>div>div>div>div>a

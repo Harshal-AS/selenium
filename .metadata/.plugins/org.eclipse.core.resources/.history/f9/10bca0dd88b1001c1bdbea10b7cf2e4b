@@ -1,0 +1,15 @@
+package castinginjava;
+
+public class Primativecasting3 {
+	void harshal5(double j) {
+		System.out.println("j value "+j);
+		
+	}
+	public static void main(String[] args) {
+		System.out.println("program start");
+		Primativecasting3 t1=new Primativecasting3();
+		t1.harshal5(500.10);
+		System.out.println("program end");
+	}
+
+}

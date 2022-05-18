@@ -1,0 +1,10 @@
+package selemiumfolder;
+
+public class OpenFirefox {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

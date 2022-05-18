@@ -1,0 +1,17 @@
+package seleniumprogram;
+
+public class Assigment1 {
+
+	public static void main(String[] args) {
+		//1.launch new chrome browser
+		2.opem https://demo.actitime.com/
+		//3.Get page title name & title length
+			4.print page title & title length on the Eclipse consol
+		
+		5.Get page URL& verify if it is a correct page open 
+		6.Get page source
+		(HTML sorce code)and page sorce length 7/print page length on eclipse consol
+		8.close the browser
+	}
+
+}

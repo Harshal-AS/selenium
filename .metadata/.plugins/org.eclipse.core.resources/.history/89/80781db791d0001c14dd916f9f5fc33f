@@ -1,0 +1,42 @@
+package keyboardoperation;
+
+//import java.awt.Dimension;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Flipkart {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+		driver.get("https://www.flipkart.com");
+		//pop off
+		Thread.sleep(200);
+		driver.findElement(By.cssSelector("body")).sendKeys(Keys.ESCAPE);
+		//driver.navigate().back();
+		
+	List<WebElement> a=	driver.findElements(By.cssSelector("div._37M3Pb>div>a"));
+		System.out.println("count main top mainu"+a.size());
+		
+		//for(WebElement as:a) {
+			//System.out.println(as.getText());
+		//}
+		for(int i=0;i<a.size();i++) {
+			Thread.sleep(200);
+			System.out.println(a.get(0).getText());
+		}
+		
+	}}
+
+
+//driver.findElement(By.cssSelector("body")).sendKeys(Keys.ESCAPE);

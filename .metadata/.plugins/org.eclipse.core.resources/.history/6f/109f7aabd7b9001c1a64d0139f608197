@@ -1,0 +1,25 @@
+package Arroys;
+
+public class Singledimensionall {
+
+	public static void main(String[] args) {
+		char []d;
+		d=new char[4];
+// or
+	//int []a=new int[45];
+		System.out.println(d[0]);// o =null value
+		System.out.println(d[1]);// o =null value  Because not initilized the value
+		System.out.println(d[2]);// o =null value
+		System.out.println(d[3]);// o =null value
+
+	d[0]='A';
+    d[1]='B';
+    d[2]='C';
+    d[3]='D';
+    System.out.println(d[0]);// 20
+	System.out.println(d[1]);//30    After initilized the value 
+	System.out.println(d[2]);// 40
+	System.out.println(d[3]);// 50
+}
+
+}

@@ -1,0 +1,20 @@
+package seleniumprogram;
+
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class IEOpen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String driverPath3=System.getProperty("user.dir")+"\\executables\\IEDriverServer.exe";
+		//Set the driver executable path using System.setProperty(String key,String value)
+		System.setProperty("webdriver.ie.driver", driverPath3);
+		//create an instance of required browser class
+		InternetExplorerDriver idriver=new InternetExplorerDriver();
+	
+
+
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package castinginjava;
+
+public class Castingall {
+
+	public static void main(String[] args) {
+		//primitive not used the char & boolean.
+		byte a=12;
+		short b=a;//widening casting .1.implicit 2.explicit
+		short k=(short)a;
+		int c =a;//implicit
+		int g=(int) a;
+		long d=a;//implicit
+		long h=(long)a;
+		float e=a;//implicit
+		float i=(float)a;
+		double f=a;//implicit
+		double j=(double)a;//explicit
+		
+		System.out.println("primitive widening type implicit casting:"+a);	
+		System.out.println("primitive widening type implicit casting:"+b);	
+		System.out.println("primitive widening type implicit casting:"+c);	
+		System.out.println("primitive widening type implicit casting:"+d);	
+		System.out.println("primitive widening type implicit casting:"+e);	
+		System.out.println("primitive widening type implicit casting:"+f);	
+
+	}
+
+}

@@ -1,0 +1,40 @@
+package castinginjava;
+class monday{
+	int age ;
+	double salary=1234.45;
+	void disply (int age) { 
+		age=12; // this keyword initilized instance member of the class
+		this.age=age;
+		System.out.println(" this keyword use age: "+this.age);
+	}
+	void dispaly1() {  //  only non -static method override
+		System.out.println("this method override to subclass ");
+	}
+}
+class sunday extends monday{
+	void harshal(int age,double salary) {
+		super.age=age;  // 
+		super.salary=salary;
+		System.out.println("differential between global & local variable at same name: "+age);
+		System.out.println("differential between global & local variable at same name: "+salary);
+	}
+	void dispaly1() {  //  only non -static method override
+		System.out.println("this method override to subclass ");
+	}
+}
+class tuesday extends sunday{
+	void dispaly1() {  //  only non -static method override
+		System.out.println("this method override to subclass ");
+	}
+}
+class wednesday extends tuesday{
+	
+}
+public class Nonprimitiveall {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

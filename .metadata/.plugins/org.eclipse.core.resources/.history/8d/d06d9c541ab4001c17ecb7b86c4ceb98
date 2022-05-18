@@ -1,0 +1,21 @@
+package finalkeywords;
+
+public class Finalkeywords1 {
+
+
+	final int speedlimit;// blank final variable
+	 Finalkeywords1() {
+		 
+		speedlimit = 70;
+		System.out.println(speedlimit);
+	}
+	public static void main(String args[]) {
+		 Finalkeywords1 f1=new  Finalkeywords1();
+		System.out.println(f1.speedlimit); 
+	}
+}
+//final keywords is a non acess modifier are used to variables,method,classes,
+//which makes then non-changeble
+///**
+//anything declared with final keyword known as constant
+// any variable declared with final keyword should initialize at the same time

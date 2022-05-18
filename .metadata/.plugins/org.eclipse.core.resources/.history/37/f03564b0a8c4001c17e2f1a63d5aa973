@@ -1,0 +1,17 @@
+package seleniumprogram;
+
+public class Assignments2 {
+
+	public static void main(String[] args) {
+		/*
+		 * 1.launch the web driver.
+		 * 2.Open the URL https://www.facebook.com in the current browser
+		 * 3.fetching home page title
+		 * 4.Verify actual title of the home page with expected title 
+		 * 5.print page length on eclipse consol
+		 * close the browser
+		 */
+		String driver1=".//"
+	}
+
+}

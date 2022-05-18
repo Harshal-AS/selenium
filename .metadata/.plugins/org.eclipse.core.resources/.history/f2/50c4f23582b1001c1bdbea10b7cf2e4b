@@ -1,0 +1,14 @@
+package castinginjava;
+
+public class Primitivecasting {
+
+	public static void main(String[] args) {
+		int age=13;
+		double salary=age;//implicit automatic conversion java compiler at compile time
+		double salary1=(double)age;// manual conversion written by programmer 
+		System.out.println(age);
+		System.out.println(salary);
+		System.out.println(salary1);
+	}
+
+}

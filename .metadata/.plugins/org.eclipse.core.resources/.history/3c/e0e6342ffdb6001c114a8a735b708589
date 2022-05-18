@@ -1,0 +1,30 @@
+package objectclass;
+class print{
+	int a=10;
+	public int hashcode() {
+		return 50 ;
+	}
+	public String toString() {
+		return ("I am Print Class toString");
+	}
+	public boolean equals(Object obj) {
+		print p=(print)obj;//new Print();
+		return (this.a==p.a);
+			  //10 == 10
+	}	
+}
+
+
+public class Objectclass6 {
+	static int age=50;
+	int notebook;
+	Objectclass6(){
+		 notebook=age;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

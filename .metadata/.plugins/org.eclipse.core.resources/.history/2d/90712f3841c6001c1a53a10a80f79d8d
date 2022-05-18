@@ -1,0 +1,30 @@
+package locators;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment6 {
+
+	public static void main(String[] driver1) {
+		String driver4=".//executables//chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver",driver4);
+		WebDriver cdriver=new ChromeDriver();
+		cdriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		cdriver.get("https://demo.vtiger.com/vtigercrm/index.php");
+		System.out.println("BEFORE LOGIN PAGE TITLE:"+cdriver.getTitle());
+		WebElement usenamefield=cdriver.findElement(By.id("username"));
+		usenamefield.sendKeys("admin");
+		
+		WebElement passwordfield=cdriver.findElement(By.id("password"));
+		passwordfield.sendKeys("Test@123");
+		
+		WebElement loginbutton=cdriver.findElement(By.id("loginButton"));
+		loginbutton.click();;
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package objectclass;
+class A{
+	static int age=12;
+	int salary=1000; 
+	int rollnumber =12345;
+	A(){
+	rollnumber=salary;	
+	}
+}
+public class Objectclass1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

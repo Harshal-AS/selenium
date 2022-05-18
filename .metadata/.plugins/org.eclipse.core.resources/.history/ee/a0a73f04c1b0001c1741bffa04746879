@@ -1,0 +1,25 @@
+package inteface;
+interface company{ 
+	int age=12;
+	static double salary=1234;
+	public static double getintrest() {
+		return 5000.10;
+	}
+}
+interface employe{
+	float f=10.10f;
+	boolean b=false;
+public static int aadition(int num1,int num2) {
+int res=num1+num2;
+return res;
+	
+}
+
+public class Interface1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

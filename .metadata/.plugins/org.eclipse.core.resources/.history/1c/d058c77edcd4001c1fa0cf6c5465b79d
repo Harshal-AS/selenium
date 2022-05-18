@@ -1,0 +1,10 @@
+package Logicalprogramjavainterview;
+
+public class Togeneratemultiplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

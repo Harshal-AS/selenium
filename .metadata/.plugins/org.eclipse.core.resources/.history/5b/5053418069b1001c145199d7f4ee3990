@@ -1,0 +1,13 @@
+package encapsulation;
+class y2{
+	private
+}
+
+public class Writeonly {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
