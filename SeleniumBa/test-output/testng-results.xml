@@ -1,45 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="107" started-at="2022-05-13T20:46:52 IST" finished-at="2022-05-13T20:46:52 IST">
+  <suite name="Default suite" duration-ms="130" started-at="2022-05-18T19:13:04 IST" finished-at="2022-05-18T19:13:04 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="107" started-at="2022-05-13T20:46:52 IST" finished-at="2022-05-13T20:46:52 IST">
-      <class name="testngproject.Examlpeannotions3">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testngproject.Examlpeannotions3@51e2adc7]" name="openBrowser" is-config="true" duration-ms="15" started-at="2022-05-13T20:46:52 IST" finished-at="2022-05-13T20:46:52 IST">
+    <test name="Default test" duration-ms="130" started-at="2022-05-18T19:13:04 IST" finished-at="2022-05-18T19:13:04 IST">
+      <class name="testngproject.TestNGPARA4">
+        <test-method status="PASS" signature="signIn()[pri:0, instance:testngproject.TestNGPARA4@1b68ddbd]" name="signIn" duration-ms="32" started-at="2022-05-18T19:13:04 IST" finished-at="2022-05-18T19:13:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="verifyLogin()[pri:1, instance:testngproject.Examlpeannotions3@51e2adc7]" name="verifyLogin" duration-ms="15" started-at="2022-05-13T20:46:52 IST" finished-at="2022-05-13T20:46:52 IST">
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testngproject.TestNGPARA4@1b68ddbd]" name="login" duration-ms="2" started-at="2022-05-18T19:13:04 IST" depends-on-methods="testngproject.TestNGPARA4.signIn" finished-at="2022-05-18T19:13:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="enterAppUrl()[pri:0, instance:testngproject.Examlpeannotions3@51e2adc7]" name="enterAppUrl" is-config="true" duration-ms="0" started-at="2022-05-13T20:46:52 IST" finished-at="2022-05-13T20:46:52 IST">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="checkNotification()[pri:0, instance:testngproject.TestNGPARA4@1b68ddbd]" name="checkNotification" duration-ms="2" started-at="2022-05-18T19:13:04 IST" depends-on-methods="testngproject.TestNGPARA4.login" finished-at="2022-05-18T19:13:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterAppUrl -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:testngproject.Examlpeannotions3@51e2adc7]" name="logout" is-config="true" duration-ms="0" started-at="2022-05-13T20:46:52 IST" finished-at="2022-05-13T20:46:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="enterAppUrl()[pri:0, instance:testngproject.Examlpeannotions3@51e2adc7]" name="enterAppUrl" is-config="true" duration-ms="0" started-at="2022-05-13T20:46:52 IST" finished-at="2022-05-13T20:46:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterAppUrl -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:testngproject.Examlpeannotions3@51e2adc7]" name="logout" is-config="true" duration-ms="0" started-at="2022-05-13T20:46:52 IST" finished-at="2022-05-13T20:46:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="createTask()[pri:2, instance:testngproject.Examlpeannotions3@51e2adc7]" name="createTask" duration-ms="0" started-at="2022-05-13T20:46:52 IST" finished-at="2022-05-13T20:46:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTask -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testngproject.Examlpeannotions3@51e2adc7]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2022-05-13T20:46:52 IST" finished-at="2022-05-13T20:46:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testngproject.Examlpeannotions3 -->
+        </test-method> <!-- checkNotification -->
+      </class> <!-- testngproject.TestNGPARA4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

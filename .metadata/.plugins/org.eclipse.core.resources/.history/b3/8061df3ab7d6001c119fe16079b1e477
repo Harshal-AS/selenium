@@ -1,0 +1,10 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Screen1 {
+
+	public static void main(String[] args) {
+		WebDriverManager.chromiumdriver().setup();
+		
+	}
+
+}

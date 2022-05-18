@@ -1,0 +1,21 @@
+package interviewprogram;
+
+import java.util.ArrayList;
+
+public class Sortarraylistjava {
+
+	public static void main(String[] args) {
+		ArrayList<String> list=new ArrayList<String> ();
+	list.add("harshal");
+	list.add("neha");
+	list.add("ulhas");
+	list.add("rutuja");
+	list.add("pranjali");
+	list.add("megha");
+	
+	//before sorting
+	System.out.println("before sorting: "+list);
+	}
+	
+
+}
